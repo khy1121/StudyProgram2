@@ -1,0 +1,338 @@
+{
+  "easy": [
+    {
+      "id": "algo_e_01",
+      "type": "multiple_choice",
+      "question": "스택의 주요 특징은?",
+      "choices": ["FIFO", "LIFO", "RANDOM", "HASH"],
+      "answer": "LIFO",
+      "answerIndex": 1,
+      "explanation": "스택(Stack)은 LIFO(Last In First Out) 구조로, 마지막에 들어온 데이터가 먼저 나갑니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_02",
+      "type": "multiple_choice",
+      "question": "큐에서 데이터를 꺼내는 연산은?",
+      "choices": ["enqueue", "dequeue", "push", "peek"],
+      "answer": "dequeue",
+      "answerIndex": 1,
+      "explanation": "큐는 FIFO 구조로, dequeue 연산을 통해 가장 먼저 들어온 데이터를 꺼냅니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_03",
+      "type": "multiple_choice",
+      "question": "이진 트리의 최대 차수는?",
+      "choices": ["1", "2", "3", "4"],
+      "answer": "2",
+      "answerIndex": 1,
+      "explanation": "이진 트리(Binary Tree)는 각 노드가 최대 두 개의 자식을 가질 수 있습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_04",
+      "type": "multiple_choice",
+      "question": "배열의 인덱스는 일반적으로 어디서 시작되는가?",
+      "choices": ["0", "1", "-1", "2"],
+      "answer": "0",
+      "answerIndex": 0,
+      "explanation": "C, Java, Python 등 대부분의 언어에서 배열 인덱스는 0부터 시작합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_05",
+      "type": "multiple_choice",
+      "question": "연결 리스트의 마지막 노드가 가리키는 것은?",
+      "choices": ["다음 노드", "헤드 노드", "NULL", "자기 자신"],
+      "answer": "NULL",
+      "answerIndex": 2,
+      "explanation": "연결 리스트의 마지막 노드는 다음 노드를 가리키지 않으므로 NULL을 참조합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_06",
+      "type": "multiple_choice",
+      "question": "후입선출(LIFO) 방식의 자료구조는?",
+      "choices": ["큐", "스택", "트리", "그래프"],
+      "answer": "스택",
+      "answerIndex": 1,
+      "explanation": "스택은 LIFO 구조를 가지며, 마지막에 들어온 데이터가 가장 먼저 나옵니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_07",
+      "type": "multiple_choice",
+      "question": "큐에서 데이터 삽입이 이루어지는 위치는?",
+      "choices": ["앞", "뒤", "중간", "랜덤"],
+      "answer": "뒤",
+      "answerIndex": 1,
+      "explanation": "큐는 FIFO 구조로, 새로운 데이터는 항상 뒤쪽에 삽입됩니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_08",
+      "type": "multiple_choice",
+      "question": "트리의 최상위 노드를 무엇이라 하는가?",
+      "choices": ["리프 노드", "루트 노드", "부모 노드", "자식 노드"],
+      "answer": "루트 노드",
+      "answerIndex": 1,
+      "explanation": "트리의 최상위에 있는 노드를 루트 노드(root node)라고 부릅니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_09",
+      "type": "multiple_choice",
+      "question": "비어 있는 스택에서 pop을 수행하면 발생하는 오류는?",
+      "choices": ["StackUnderflow", "Overflow", "NullPointer", "MemoryLeak"],
+      "answer": "StackUnderflow",
+      "answerIndex": 0,
+      "explanation": "스택이 비어 있을 때 pop을 수행하면 StackUnderflow 예외가 발생합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_e_10",
+      "type": "multiple_choice",
+      "question": "이진 탐색의 평균 시간 복잡도는?",
+      "choices": ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+      "answer": "O(log n)",
+      "answerIndex": 1,
+      "explanation": "정렬된 배열에서 이진 탐색은 O(log n)의 시간 복잡도로 빠르게 탐색할 수 있습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    }
+  ],
+  "medium": [
+    {
+      "id": "algo_m_01",
+      "type": "multiple_choice",
+      "question": "이진 탐색 트리의 평균 탐색 시간 복잡도는?",
+      "choices": ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+      "answer": "O(log n)",
+      "answerIndex": 1,
+      "explanation": "이진 탐색 트리는 평균적으로 균형을 이루면 O(log n) 탐색이 가능합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_02",
+      "type": "multiple_choice",
+      "question": "힙 정렬(Heap Sort)은 어떤 자료구조를 기반으로 하는가?",
+      "choices": ["트리", "그래프", "스택", "배열"],
+      "answer": "트리",
+      "answerIndex": 0,
+      "explanation": "힙 정렬은 완전이진트리 형태의 힙(Heap)을 기반으로 구현됩니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_03",
+      "type": "multiple_choice",
+      "question": "그래프의 인접 행렬 표현의 단점은?",
+      "choices": ["메모리 낭비", "탐색 불가", "복잡도 증가", "정점 정보 부족"],
+      "answer": "메모리 낭비",
+      "answerIndex": 0,
+      "explanation": "인접 행렬은 간선이 적은 희소 그래프일 경우 불필요한 0 저장으로 메모리 낭비가 발생합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_04",
+      "type": "multiple_choice",
+      "question": "삽입 정렬의 최악의 경우 시간 복잡도는?",
+      "choices": ["O(n)", "O(n log n)", "O(n²)", "O(1)"],
+      "answer": "O(n²)",
+      "answerIndex": 2,
+      "explanation": "삽입 정렬은 이미 역순으로 정렬된 데이터에서 최악의 경우 O(n²)의 시간이 소요됩니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_05",
+      "type": "multiple_choice",
+      "question": "퀵 정렬의 평균 시간 복잡도는?",
+      "choices": ["O(n²)", "O(n log n)", "O(n)", "O(log n)"],
+      "answer": "O(n log n)",
+      "answerIndex": 1,
+      "explanation": "퀵 정렬은 평균적으로 O(n log n)의 빠른 정렬 성능을 보이지만, 피벗 선택에 따라 성능이 달라질 수 있습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_06",
+      "type": "multiple_choice",
+      "question": "DFS 탐색 시 사용하는 기본 자료구조는?",
+      "choices": ["큐", "스택", "트리", "리스트"],
+      "answer": "스택",
+      "answerIndex": 1,
+      "explanation": "DFS(깊이 우선 탐색)는 스택을 이용하여 재귀적으로 구현할 수 있습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_07",
+      "type": "multiple_choice",
+      "question": "BFS 탐색 시 사용하는 기본 자료구조는?",
+      "choices": ["스택", "큐", "배열", "트리"],
+      "answer": "큐",
+      "answerIndex": 1,
+      "explanation": "BFS(너비 우선 탐색)는 큐를 이용해 같은 레벨의 노드를 순차적으로 탐색합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_08",
+      "type": "multiple_choice",
+      "question": "해시 충돌을 해결하기 위한 방법이 아닌 것은?",
+      "choices": ["체이닝", "오픈 어드레싱", "리니어 프로빙", "병합 정렬"],
+      "answer": "병합 정렬",
+      "answerIndex": 3,
+      "explanation": "병합 정렬은 정렬 알고리즘이며, 해시 충돌 해결 방법과 관련이 없습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_09",
+      "type": "multiple_choice",
+      "question": "병합 정렬의 공간 복잡도는?",
+      "choices": ["O(1)", "O(n)", "O(log n)", "O(n²)"],
+      "answer": "O(n)",
+      "answerIndex": 1,
+      "explanation": "병합 정렬은 정렬 중 추가 배열이 필요하므로 O(n)의 공간 복잡도를 가집니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_m_10",
+      "type": "multiple_choice",
+      "question": "그래프의 최소 신장 트리를 구하는 알고리즘은?",
+      "choices": ["Dijkstra", "Prim", "Bellman-Ford", "Floyd"],
+      "answer": "Prim",
+      "answerIndex": 1,
+      "explanation": "Prim 알고리즘은 가중치 그래프에서 최소 신장 트리를 구하는 대표적인 방법입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    }
+  ],
+  "hard": [
+    {
+      "id": "algo_h_01",
+      "type": "multiple_choice",
+      "question": "AVL 트리에서 균형 인수(Balance Factor)의 범위는?",
+      "choices": ["-1~1", "-2~2", "0~1", "-3~3"],
+      "answer": "-1~1",
+      "answerIndex": 0,
+      "explanation": "AVL 트리는 각 노드의 왼쪽과 오른쪽 서브트리 높이 차가 -1, 0, 1을 넘지 않습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_02",
+      "type": "multiple_choice",
+      "question": "레드-블랙 트리에서 루트 노드의 색상은 항상?",
+      "choices": ["빨강", "검정", "무관", "회색"],
+      "answer": "검정",
+      "answerIndex": 1,
+      "explanation": "레드-블랙 트리의 루트 노드는 항상 검정색으로 유지됩니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_03",
+      "type": "multiple_choice",
+      "question": "트라이(Trie) 구조는 주로 어떤 문제에 사용되는가?",
+      "choices": ["정렬", "문자열 탐색", "최단 경로", "이진 탐색"],
+      "answer": "문자열 탐색",
+      "answerIndex": 1,
+      "explanation": "트라이는 문자열 검색과 자동완성 기능 구현에 자주 사용됩니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_04",
+      "type": "multiple_choice",
+      "question": "위상 정렬(Topological Sort)은 어떤 그래프에서만 가능한가?",
+      "choices": ["무방향 그래프", "유방향 비순환 그래프", "가중 그래프", "트리"],
+      "answer": "유방향 비순환 그래프",
+      "answerIndex": 1,
+      "explanation": "위상 정렬은 순환이 없는 DAG(Directed Acyclic Graph)에서만 수행 가능합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_05",
+      "type": "multiple_choice",
+      "question": "이진 탐색 트리에서 최소값은 어디에 위치하는가?",
+      "choices": ["왼쪽 서브트리의 가장 왼쪽", "오른쪽 서브트리의 루트", "루트 노드", "가장 오른쪽 노드"],
+      "answer": "왼쪽 서브트리의 가장 왼쪽",
+      "answerIndex": 0,
+      "explanation": "BST에서 가장 작은 값은 항상 가장 왼쪽 리프 노드에 위치합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_06",
+      "type": "multiple_choice",
+      "question": "다익스트라 알고리즘의 시간 복잡도는?",
+      "choices": ["O(V²)", "O(E log V)", "O(V+E)", "O(V³)"],
+      "answer": "O(E log V)",
+      "answerIndex": 1,
+      "explanation": "다익스트라 알고리즘은 우선순위 큐를 이용하면 O(E log V) 시간에 동작합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_07",
+      "type": "multiple_choice",
+      "question": "플로이드-워셜 알고리즘의 시간 복잡도는?",
+      "choices": ["O(V²)", "O(V³)", "O(E log V)", "O(V log V)"],
+      "answer": "O(V³)",
+      "answerIndex": 1,
+      "explanation": "플로이드-워셜은 모든 정점 쌍 간 최단 경로를 구하는 알고리즘으로 O(V³) 복잡도를 가집니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_08",
+      "type": "multiple_choice",
+      "question": "트리에서 간선(edge)의 개수는 노드가 n개일 때?",
+      "choices": ["n", "n-1", "n+1", "n²"],
+      "answer": "n-1",
+      "answerIndex": 1,
+      "explanation": "트리는 사이클이 없는 연결 그래프이므로 항상 간선의 수는 노드 수보다 1 적습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_09",
+      "type": "multiple_choice",
+      "question": "다중 큐 스케줄링에서 동일 우선순위의 프로세스를 처리할 때 주로 사용하는 방식은?",
+      "choices": ["FCFS", "SJF", "RR", "Priority"],
+      "answer": "FCFS",
+      "answerIndex": 0,
+      "explanation": "같은 우선순위의 프로세스는 일반적으로 도착 순서(FCFS)로 처리합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "algo_h_10",
+      "type": "multiple_choice",
+      "question": "이진 힙에서 삽입 후 재정렬하는 과정을 무엇이라 하는가?",
+      "choices": ["heapify", "merge", "rotate", "balance"],
+      "answer": "heapify",
+      "answerIndex": 0,
+      "explanation": "힙에서 삽입 후 부모-자식 관계를 재정렬하는 과정을 heapify라 합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    }
+  ]
+}

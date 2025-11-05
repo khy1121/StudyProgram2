@@ -1,0 +1,343 @@
+{
+  "easy": [
+    {
+      "id": "os_e_01",
+      "type": "multiple_choice",
+      "question": "운영체제의 주요 기능이 아닌 것은?",
+      "choices": ["프로세스 관리", "메모리 관리", "파일 시스템 관리", "하드웨어 설계"],
+      "answer": "하드웨어 설계",
+      "answerIndex": 3,
+      "explanation": "운영체제는 하드웨어를 제어하지만 하드웨어를 설계하지는 않습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_02",
+      "type": "multiple_choice",
+      "question": "CPU가 여러 프로그램을 번갈아 실행하는 방식을 무엇이라 하는가?",
+      "choices": ["싱글태스킹", "멀티태스킹", "스레딩", "하이퍼스레딩"],
+      "answer": "멀티태스킹",
+      "answerIndex": 1,
+      "explanation": "멀티태스킹은 여러 프로그램이 동시에 실행되는 것처럼 보이게 하는 기술입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_03",
+      "type": "multiple_choice",
+      "question": "프로세스(Process)의 정의로 올바른 것은?",
+      "choices": ["저장된 데이터 집합", "실행 중인 프로그램", "하드웨어 장치", "파일 시스템의 일부"],
+      "answer": "실행 중인 프로그램",
+      "answerIndex": 1,
+      "explanation": "프로세스는 실행 중인 프로그램으로, CPU 자원을 할당받아 동작합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_04",
+      "type": "multiple_choice",
+      "question": "프로세스 상태 중 CPU를 점유하고 명령을 수행 중인 상태는?",
+      "choices": ["준비(Ready)", "대기(Waiting)", "실행(Running)", "종료(Terminated)"],
+      "answer": "실행(Running)",
+      "answerIndex": 2,
+      "explanation": "Running 상태는 CPU를 실제로 사용하며 명령을 실행하는 상태입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_05",
+      "type": "multiple_choice",
+      "question": "운영체제에서 인터럽트(Interrupt)의 주요 목적은?",
+      "choices": ["입출력 속도 향상", "비동기 이벤트 처리", "메모리 압축", "시스템 재시작"],
+      "answer": "비동기 이벤트 처리",
+      "answerIndex": 1,
+      "explanation": "인터럽트는 입출력 완료나 오류 등 비동기적 사건을 처리하기 위한 신호입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_06",
+      "type": "multiple_choice",
+      "question": "프로세스가 I/O 작업을 기다리는 동안의 상태는?",
+      "choices": ["Ready", "Blocked", "Running", "Terminated"],
+      "answer": "Blocked",
+      "answerIndex": 1,
+      "explanation": "I/O 요청이 완료될 때까지 CPU를 사용할 수 없기 때문에 Blocked 상태가 됩니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_07",
+      "type": "multiple_choice",
+      "question": "시분할 시스템의 주요 장점은?",
+      "choices": ["실시간 처리", "응답 시간 단축", "하드웨어 절감", "단일 사용자 집중"],
+      "answer": "응답 시간 단축",
+      "answerIndex": 1,
+      "explanation": "시분할 시스템은 여러 사용자가 CPU를 나누어 사용해 응답 시간을 단축합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_08",
+      "type": "multiple_choice",
+      "question": "프로세스 제어 블록(PCB)에 포함되지 않는 정보는?",
+      "choices": ["프로세스 상태", "프로그램 카운터", "레지스터 정보", "프린터 상태"],
+      "answer": "프린터 상태",
+      "answerIndex": 3,
+      "explanation": "PCB는 프로세스 관리용 정보만 포함하며 주변장치 상태는 포함하지 않습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_09",
+      "type": "multiple_choice",
+      "question": "CPU 스케줄링 알고리즘 중 가장 단순한 방식은?",
+      "choices": ["SJF", "Priority", "FCFS", "Round Robin"],
+      "answer": "FCFS",
+      "answerIndex": 2,
+      "explanation": "FCFS(First Come First Serve)는 도착 순서대로 CPU를 할당하는 가장 단순한 방식입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_e_10",
+      "type": "multiple_choice",
+      "question": "교착 상태(Deadlock)는 어떤 자원 관리 문제로 인해 발생하는가?",
+      "choices": ["자원 공유", "동시성", "경쟁 조건", "자원 독점"],
+      "answer": "자원 독점",
+      "answerIndex": 3,
+      "explanation": "교착 상태는 프로세스들이 자원을 독점하여 서로 기다릴 때 발생합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    }
+  ],
+  "medium": [
+    {
+      "id": "os_m_01",
+      "type": "multiple_choice",
+      "question": "라운드 로빈 스케줄링에서 중요한 매개변수는?",
+      "choices": ["타임 퀀텀", "우선순위", "프로세스 ID", "큐 길이"],
+      "answer": "타임 퀀텀",
+      "answerIndex": 0,
+      "explanation": "라운드 로빈은 각 프로세스에 일정한 타임 퀀텀만큼 CPU를 순차적으로 배분합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_02",
+      "type": "multiple_choice",
+      "question": "SJF(Shortest Job First) 알고리즘의 단점은?",
+      "choices": ["기아 현상 발생 가능", "응답 시간 증가", "메모리 낭비", "비선점형 구조"],
+      "answer": "기아 현상 발생 가능",
+      "answerIndex": 0,
+      "explanation": "짧은 작업 위주로 선택하면 긴 작업이 무한히 대기하는 기아 현상이 생길 수 있습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_03",
+      "type": "multiple_choice",
+      "question": "임계 구역(Critical Section) 문제의 주요 해결 조건이 아닌 것은?",
+      "choices": ["상호 배제", "진행 보장", "유한 대기", "비선점"],
+      "answer": "비선점",
+      "answerIndex": 3,
+      "explanation": "임계 구역 조건은 상호배제, 진행, 유한대기이며 비선점은 별개의 개념입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_04",
+      "type": "multiple_choice",
+      "question": "세마포어(Semaphore)는 어떤 문제 해결에 사용되는가?",
+      "choices": ["동기화", "버퍼 관리", "캐시 교체", "스케줄링"],
+      "answer": "동기화",
+      "answerIndex": 0,
+      "explanation": "세마포어는 프로세스 간 공유 자원 접근을 동기화하는 데 사용됩니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_05",
+      "type": "multiple_choice",
+      "question": "모니터(Monitor)는 어떤 언어적 구조인가?",
+      "choices": ["하드웨어 인터럽트", "고급 동기화 도구", "커널 모듈", "스택 메커니즘"],
+      "answer": "고급 동기화 도구",
+      "answerIndex": 1,
+      "explanation": "모니터는 동기화를 언어 수준에서 지원하는 추상적 동기화 메커니즘입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_06",
+      "type": "multiple_choice",
+      "question": "페이징 시스템에서 내부 단편화가 발생하는 이유는?",
+      "choices": ["페이지 크기 고정", "페이지 교체 실패", "메모리 부족", "프로세스 충돌"],
+      "answer": "페이지 크기 고정",
+      "answerIndex": 0,
+      "explanation": "페이지 크기가 고정되어 있기 때문에 마지막 페이지의 일부 공간이 낭비될 수 있습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_07",
+      "type": "multiple_choice",
+      "question": "세그멘테이션(Segmentation)에서 외부 단편화가 발생하는 원인은?",
+      "choices": ["세그먼트 크기 다양", "페이지 크기 고정", "메모리 공유 실패", "캐시 미스"],
+      "answer": "세그먼트 크기 다양",
+      "answerIndex": 0,
+      "explanation": "세그먼트는 크기가 다양하기 때문에 중간에 비는 공간이 생겨 외부 단편화가 발생합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_08",
+      "type": "multiple_choice",
+      "question": "가상 메모리에서 페이지 폴트(Page Fault)가 발생하면?",
+      "choices": ["프로세스 중단", "디스크에서 페이지 로드", "CPU 교체", "스케줄러 중단"],
+      "answer": "디스크에서 페이지 로드",
+      "answerIndex": 1,
+      "explanation": "페이지 폴트는 해당 페이지가 메모리에 없어 디스크에서 불러와야 함을 의미합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_09",
+      "type": "multiple_choice",
+      "question": "LRU(Least Recently Used) 알고리즘의 목적은?",
+      "choices": ["최근 사용된 페이지 보존", "가장 오래된 페이지 교체", "랜덤 교체", "FIFO 구현"],
+      "answer": "가장 오래된 페이지 교체",
+      "answerIndex": 1,
+      "explanation": "LRU는 최근에 사용된 페이지를 보존하고 오래된 페이지를 교체하는 방식입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_m_10",
+      "type": "multiple_choice",
+      "question": "스래싱(Thrashing)이 발생할 때 시스템의 특징은?",
+      "choices": ["CPU 사용률 상승", "페이지 부재율 증가", "I/O 감소", "메모리 사용량 감소"],
+      "answer": "페이지 부재율 증가",
+      "answerIndex": 1,
+      "explanation": "스래싱은 프로세스가 계속 페이지 교체를 반복하여 CPU보다 I/O가 바빠지는 현상입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    }
+  ],
+  "hard": [
+    {
+      "id": "os_h_01",
+      "type": "multiple_choice",
+      "question": "교착 상태 발생의 필요조건 4가지는?",
+      "choices": ["상호배제, 점유와 대기, 비선점, 순환대기", "상호배제, 경쟁조건, 선점, 순환대기", "비선점, 스케줄링, 페이징, 교환", "순환대기, 캐시미스, 블로킹, 페이지폴트"],
+      "answer": "상호배제, 점유와 대기, 비선점, 순환대기",
+      "answerIndex": 0,
+      "explanation": "교착 상태는 네 가지 조건이 동시에 만족할 때 발생합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_02",
+      "type": "multiple_choice",
+      "question": "은행가 알고리즘(Banker's Algorithm)의 주요 목적은?",
+      "choices": ["교착 상태 예방", "페이징 효율화", "CPU 부하 감소", "스케줄링 최적화"],
+      "answer": "교착 상태 예방",
+      "answerIndex": 0,
+      "explanation": "은행가 알고리즘은 자원 할당을 안전 상태로 유지하여 교착 상태를 방지합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_03",
+      "type": "multiple_choice",
+      "question": "MMU(Memory Management Unit)의 역할은?",
+      "choices": ["주소 변환", "프로세스 생성", "CPU 캐시 제어", "디스크 I/O"],
+      "answer": "주소 변환",
+      "answerIndex": 0,
+      "explanation": "MMU는 논리 주소를 물리 주소로 변환하는 하드웨어 장치입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_04",
+      "type": "multiple_choice",
+      "question": "TLB(Translation Lookaside Buffer)는 어떤 기능을 수행하는가?",
+      "choices": ["페이지 테이블 캐싱", "디스크 버퍼링", "프로세스 대기 관리", "입출력 제어"],
+      "answer": "페이지 테이블 캐싱",
+      "answerIndex": 0,
+      "explanation": "TLB는 최근 사용된 페이지 테이블 항목을 캐시하여 주소 변환 속도를 높입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_05",
+      "type": "multiple_choice",
+      "question": "커널 모드에서 실행되는 작업의 특징은?",
+      "choices": ["모든 명령어 실행 가능", "제한된 권한만 사용", "응용프로그램 실행", "사용자 요청 처리"],
+      "answer": "모든 명령어 실행 가능",
+      "answerIndex": 0,
+      "explanation": "커널 모드에서는 하드웨어 접근 등 모든 명령어 실행이 가능합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_06",
+      "type": "multiple_choice",
+      "question": "문맥 교환(Context Switch)이 자주 발생할 경우의 단점은?",
+      "choices": ["시스템 성능 저하", "스케줄링 향상", "캐시 효율 상승", "메모리 절약"],
+      "answer": "시스템 성능 저하",
+      "answerIndex": 0,
+      "explanation": "문맥 교환이 잦으면 CPU가 실제 작업보다 상태 저장/복원에 더 많은 시간을 소모합니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_07",
+      "type": "multiple_choice",
+      "question": "페이지 교체 알고리즘 중 가장 이상적인 알고리즘은?",
+      "choices": ["LRU", "FIFO", "Optimal", "Clock"],
+      "answer": "Optimal",
+      "answerIndex": 2,
+      "explanation": "Optimal 알고리즘은 앞으로 가장 오래 사용되지 않을 페이지를 교체하므로 가장 효율적입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_08",
+      "type": "multiple_choice",
+      "question": "Copy-on-Write(COW) 기법의 장점은?",
+      "choices": ["프로세스 간 메모리 복제 최소화", "I/O 속도 향상", "교착 상태 방지", "TLB 캐시 향상"],
+      "answer": "프로세스 간 메모리 복제 최소화",
+      "answerIndex": 0,
+      "explanation": "COW는 프로세스가 복사본을 수정하기 전까지 동일한 메모리를 공유하여 효율을 높입니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_09",
+      "type": "multiple_choice",
+      "question": "스레드 기반 병렬처리의 단점은?",
+      "choices": ["데이터 경쟁 위험", "메모리 낭비", "속도 저하", "비동기 불가능"],
+      "answer": "데이터 경쟁 위험",
+      "answerIndex": 0,
+      "explanation": "스레드는 같은 메모리 공간을 공유하므로 동기화가 제대로 이루어지지 않으면 데이터 경쟁(Race Condition)이 발생할 수 있습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    },
+    {
+      "id": "os_h_10",
+      "type": "multiple_choice",
+      "question": "다중 프로세서 환경에서 교착 상태를 완전히 방지하기 어려운 이유는?",
+      "choices": [
+        "프로세서 간 자원 경쟁이 없기 때문이다",
+        "자원 접근 순서를 완벽히 제어할 수 없기 때문이다",
+        "각 프로세서가 독립적으로 실행되기 때문이다",
+        "운영체제가 단일 스레드 방식으로 동작하기 때문이다"
+      ],
+      "answer": "자원 접근 순서를 완벽히 제어할 수 없기 때문이다",
+      "answerIndex": 1,
+      "explanation": "다중 프로세서 시스템에서는 자원 접근이 병렬적으로 이루어지므로 접근 순서를 완벽히 통제하기 어렵습니다.",
+      "userSelectedIndex": 0,
+      "isWrong": false
+    }
+  ]
+}

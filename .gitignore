@@ -12,8 +12,8 @@ dist
 dist-ssr
 *.local
 
-# App data (exclude problem sets or large datasets)
-public/data/
+# App data (exclude large datasets, but keep problem sets)
+# public/data/
 
 # Server secrets and local DB (safety net; also covered by server/.gitignore)
 server/.env

@@ -29,7 +29,7 @@ export default function ResultsPageComponent({ results, onRetry, onHome, theme }
         <div className="results-footer-inner">
           <div className="results-actions">
             <button
-              className="action-button primary"
+              className="action-button primary" 
               onClick={onRetry}
             >
               다시 학습하기
