@@ -20,6 +20,7 @@ export default function ProblemPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [results, setResults] = useState({
     correctCount: 0,
     wrongCount: 0,
@@ -138,7 +139,16 @@ export default function ProblemPage() {
 
   const handleOptionSelect = (index) => {
     setSelectedOption(index);
-    if (isQuizMode) setShowAnswer(true);
+    // 퀴즈 모드에서는 선택만 하고 제출 버튼을 기다림
+  };
+
+  const handleSubmit = () => {
+    if (selectedOption === null) return;
+    
+    setIsSubmitted(true);
+    if (isQuizMode) {
+      setShowAnswer(true);
+    }
   };
 
   const calculateResults = () => {
@@ -249,6 +259,13 @@ export default function ProblemPage() {
 
   const handleNext = () => {
     if (!currentProblem) return;
+    
+    // 퀴즈 모드에서는 제출이 완료된 경우에만 다음으로 진행
+    if (isQuizMode && !isSubmitted) {
+      alert('제출 버튼을 먼저 눌러주세요.');
+      return;
+    }
+    
     if (selectedOption === null) {
       alert('보기를 선택하세요.');
       return;
@@ -298,6 +315,7 @@ export default function ProblemPage() {
     const nextIndex = currentProblemIndex + 1;
     setCurrentProblemIndex(nextIndex);
     setSelectedOption(null);
+    setIsSubmitted(false); // 제출 상태 초기화
     setProgress(((nextIndex + 1) / problems.length) * 100);
   };
 
@@ -311,8 +329,10 @@ export default function ProblemPage() {
     const previousProblem = problems[prevIndex];
     if (typeof previousProblem.userSelectedIndex !== 'undefined') {
       setSelectedOption(previousProblem.userSelectedIndex);
+      setIsSubmitted(true); // 이미 제출된 문제
     } else {
       setSelectedOption(null);
+      setIsSubmitted(false); // 아직 제출하지 않은 문제
     }
     
     if (isQuizMode) setShowAnswer(false);
@@ -507,7 +527,7 @@ export default function ProblemPage() {
           </div>
         )}
 
-        {(selectedOption !== null || showAnswer) && (
+        {selectedOption !== null && (
           <div className="action-row">
             {currentProblemIndex > 0 && (
               <button className="btn-previous" onClick={handlePrevious}>
@@ -517,12 +537,24 @@ export default function ProblemPage() {
                 이전 문제
               </button>
             )}
-            <button className={isQuizMode ? "btn-next" : "btn-submit"} onClick={handleNext}>
-              {currentProblemIndex === problems.length - 1 ? '결과 보기' : '다음 문제'}
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </button>
+            
+            {/* 퀴즈 모드에서 아직 제출하지 않은 경우 제출 버튼 표시 */}
+            {isQuizMode && !isSubmitted ? (
+              <button className="btn-submit" onClick={handleSubmit}>
+                제출하기
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </button>
+            ) : (
+              /* 시험 모드이거나 이미 제출한 경우 다음 버튼 표시 */
+              <button className={isQuizMode ? "btn-next" : "btn-submit"} onClick={handleNext}>
+                {currentProblemIndex === problems.length - 1 ? '결과 보기' : '다음 문제'}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            )}
           </div>
         )}
       </main>
