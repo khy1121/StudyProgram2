@@ -1,0 +1,68 @@
+.mypage-container{
+    padding: 4%;
+    padding-top: 2%;
+}
+
+.selectTab{
+    display: flex;
+    gap: 20px;
+    margin: 20px 40px;
+    font-size: 14px;
+}
+.selectTab span.active{
+    font-weight: 700;
+    color: #4a74f5;
+    border-bottom: 2px solid #4a74f5;
+}
+.welcomeTab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+    background: linear-gradient(100deg, #5d5ce6, #a76ff6);
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff
+}
+.welcomeTab .welcome{
+    font-size: 25px;
+}
+.progress span{
+    font-size: 30px;
+}
+.summaryTab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.summaryTab{
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.summaryTab .card{
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    /* text-align: center; */
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.6);
+}
+.summaryTab .card h3{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.recommandTab{
+    background: linear-gradient(500deg, #afaffe, #c9cbfd);
+    padding: 22px;
+    margin: 20px 40px;
+    border-radius: 12px;
+}
+.recommandTab h4{
+    font-weight: 700;
+    font-size: 20px;
+}

@@ -6,6 +6,12 @@ import LoginPage from './pages/Login/LoginPage';
 import SignInPage from './pages/SignIn/SignInPage';
 import WelcomePage from './pages/Welcome/WelcomePage';
 import ProtectedRoute from './components/auth/ProtectedRoute';
+import MyPage from './pages/MyPage/MyPage';
+import Achievment from "./components/MyPage/Achievement";
+import SummaryContent from "./components/MyPage/SummaryContent";
+import StudyAnal from "./components/MyPage/StudyAnal";
+import ReviewNote from "./components/MyPage/ReviewNote";
+import Settings from "./components/MyPage/Settings";
 
 function App() {
   return (
@@ -19,6 +25,15 @@ function App() {
             <Route path="signIn" element={<SignInPage />} />
           </Route>
           <Route path="/home" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+          {/*마이페이지 중첩 라우팅 */}
+          <Route path="/mypage" element={<MyPage/>}>
+            <Route index element={<SummaryContent/>}/>
+            <Route path="study-anal" element={<StudyAnal/>}/>
+            <Route path="wrong-note" element={<ReviewNote/>}/>
+            <Route path="achievment" element={<Achievment/>}/>
+            <Route path="settings" element={<Settings/>}/>
+
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
