@@ -13,9 +13,11 @@
 
 body {
   margin: 0;
-  background-color: #f8f8f8;
+  /* Use theme variable so dark/light apply globally via :root[data-theme] */
+  background-color: var(--bg-primary, #f8f8f8);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  color: var(--text-secondary, #374151);
 
   font-family: "TheDoodle", sans-serif;
 }

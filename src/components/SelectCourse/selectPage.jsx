@@ -76,10 +76,30 @@ export default function SelectPage({ onStart, ...props }) {
       .then((res) => res.json())
       .then((json) => {
         // 난이도에 따른 문제 필터링
-        const list = difficulty ? (json.difficulties[difficulty] || []) : [];
+        // 지원하는 JSON 구조들:
+        // 1) { difficulties: { '초급': [...], '중급': [...], '고급': [...] } }
+        // 2) { easy: [...], medium: [...], hard: [...] }
+        let list = [];
+        if (difficulty) {
+          if (json && typeof json.difficulties === 'object') {
+            list = json.difficulties[difficulty] || [];
+          } else {
+            const MAP = { '초급': 'easy', '중급': 'medium', '고급': 'hard' };
+            const key = MAP[difficulty];
+            if (key && typeof json[key] !== 'undefined') {
+              list = json[key] || [];
+            } else {
+              // fallback: try to find any array value in root that looks like problems
+              const candidate = Object.values(json).find(v => Array.isArray(v));
+              list = candidate || [];
+            }
+          }
+        }
         setProblems(list);
       })
-      .catch(console.error);
+      .catch((err) => {
+        console.error('failed to load problems file:', err);
+      });
   }, [subject, difficulty]);
 
   // 유효성 검사: 시작 버튼 활성화 조건
